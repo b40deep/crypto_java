@@ -95,7 +95,7 @@ public class EntryList{
     };	
 
 
-    /**   function  to print all items in the User Mmaount List
+    /**   function  to print all items in the User Amount List
      *    in the form 
      *      word1  <user> word2 <amount>  
      */

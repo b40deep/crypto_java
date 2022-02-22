@@ -174,7 +174,9 @@ public class UserAmount {
 	System.out.println("Set Balance Alice to 10");
 	uAmount.setBalance("Alice",10);
 	uAmount.print();
-	System.out.println("Add to Balance Bob 7");
+        System.out.println("Check balance");
+        System.out.println(uAmount.checkBalance("Alice",10));
+    System.out.println("Add to Balance Bob 7");
 	uAmount.addBalance("Bob",7);
 	uAmount.print();
 	System.out.println("Subtract from Balance Bob 5");	
