@@ -201,13 +201,13 @@ public class Ledger extends UserAmount{
 
         // check whether the EntryList txel1 giving Alice 15 units, and Bob 10 units can be deducted,
         EntryList txel1 = new EntryList("Alice",15,"Bob",10);
-        System.out.println(">> test txel1 deducts: "+ledgit.checkEntryListDeductable(txel1));
+        System.out.println(">> test txel1 (A:15,B:10) deducts: "+ledgit.checkEntryListDeductable(txel1));
         ledgit.printLedger();
 
         // check whether the EntryList txel2 giving Alice 15 units, giving Alice again 15 units,
         // and giving Bob 5 units, can be deducted,
         EntryList txel2 = new EntryList("Alice",15,"Alice",15,"Bob",5);
-        System.out.println(">> test txel2 deducts: "+ledgit.checkEntryListDeductable(txel2));
+        System.out.println(">> test txel2 (A:15,A:15,B:5) deducts: "+ledgit.checkEntryListDeductable(txel2));
         ledgit.printLedger();
 
         // deduct txel1 from the ledger
